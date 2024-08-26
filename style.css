@@ -1,0 +1,96 @@
+:root{
+    --btn-secondary:rgb(230, 238, 113);
+    --btn-active:cornsilk;
+    --btn-delete:red;
+    --btn-completed:rgb(121, 222, 121);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 245, 255);
+}
+.container{
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #3b3838;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+#todoinput{
+    width: 75%;
+    padding: 10px;
+    margin-right:10px ;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+#Addtodo{
+    
+    padding: 10px 19px;
+    border: none;
+    background-color: #5acbff;
+    border-radius: none;
+    border-radius: 5px;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+  
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    
+}
+li:hover{
+    background-color: aliceblue;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+.filterBtn,.DELETEbtn,.COMPLETEDbtn{
+    margin: 5px;
+    padding: 7px 7px;
+    background-color: var(--btn-secondary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.DELETEbtn{
+    background-color: var(--btn-delete);
+    transition: background-color 0.3s;
+}
+.DELETEbtn:hover{
+    background-color: rgb(246, 144, 144);
+}
+.COMPLETEDbtn{
+    background-color: var(--btn-completed);
+    transition: background-color 0.3s;
+}
+.COMPLETEDbtn:hover{
+    background-color: rgb(200, 243, 200);
+}
+
+.filterBtn:hover{
+    background-color: var(--btn-active);
+}
+
+.todoItem{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+}
