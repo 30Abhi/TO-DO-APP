@@ -3,6 +3,7 @@
     --btn-active:cornsilk;
     --btn-delete:red;
     --btn-completed:rgb(121, 222, 121);
+    --btn-edit:rgb(216, 233, 37);
 }
 body{
     margin: 0;
@@ -57,7 +58,7 @@ li:hover{
 li:last-child{
     border-bottom: none;
 }
-.filterBtn,.DELETEbtn,.COMPLETEDbtn{
+.filterBtn,.DELETEbtn,.COMPLETEDbtn,.EDITbtn{
     margin: 5px;
     padding: 7px 7px;
     background-color: var(--btn-secondary);
@@ -66,6 +67,14 @@ li:last-child{
     cursor: pointer;
     transition: background-color 0.3s;
 
+}
+
+.EDITbtn{
+    background-color: var(--btn-edit);
+    transition: background-color 0.3s;
+}
+.EDITbtn:hover{
+    background-color: rgb(238, 245, 149);
 }
 
 .DELETEbtn{
@@ -93,4 +102,8 @@ li:last-child{
     margin-left: auto;
     justify-content: space-between;
     align-items: center;
+}
+
+.completed{
+    text-decoration: line-through;
 }
